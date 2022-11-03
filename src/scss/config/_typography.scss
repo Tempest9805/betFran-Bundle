@@ -6,12 +6,14 @@
 // Font families
 $body-font    : Lato,        'sans-serif';
 $heading-font : 'Open Sans', 'sans-serif';
+$footer-font  : 'Open Sans', 'sans-serif';
 
 // CSS variables for typography
 :root {
   // Font families
   --heading-font : 'Open Sans', sans-serif;
   --body-font    : Lato,        sans-serif;
+  --footer-font  : 'Open Sans', sans-serif;
 
   // Font sizes
   --h1-font-size        : #{rem(24px)};
@@ -194,7 +196,7 @@ a {
     text-decoration : none;
 
     &:hover {
-      text-decoration : underline;
+      text-decoration : none;
     }
   }
 }

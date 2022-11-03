@@ -5,7 +5,11 @@
     --header-height 	: 4rem;
   }
 	//native color vars
-	--color-first      	: #007BDF;
+	--color-first      	: #111111;
+  --second-color      : rgb(255, 255, 255);
+  --gray-color        : #1a1a1a;
+  --Bg-ColorOrange    : #ff9c00;
+  
 }
 // Sass Color Vars
-$color-first 			: var(--color-first			);
+$color-first 			: var(--color-first);

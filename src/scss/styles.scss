@@ -1,6 +1,7 @@
 // Libraries
 @import "libraries/libraries";
-
+//Variables
+@import "config/variables";
 // Config
 @import "config/config";
 
@@ -10,8 +11,13 @@
 
 // MODULOS (SMACSS) O COMPONENTES (ITCSS)
 @import "components/components";
+@import "components/btn-nav";
+@import "components/tns-slider-global";
+@import "components/tns-single";
+
 
 // Utilities (hacks)
 // Todos los hacks que hayas necesitado para solucionar conflictos
 // o resolver situaciones extremas. Se espera poder mejorarlos luego.
 @import "hacks/hacks"; 
+

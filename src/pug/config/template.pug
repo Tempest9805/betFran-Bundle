@@ -7,6 +7,9 @@ html(lang='en' prefix='og: http://ogp.me/ns#', class='no-js')
 		include utilis/metatags
 		include utilis/metaTagsPWA
 		link(rel="stylesheet" href="assets/css/styles.css")
+		link(rel="preconnect" href="https://fonts.googleapis.com")
+		link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+		link(href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet")
 		title= currentPage.slice(0,1).toUpperCase() + currentPage.slice(1) + " | " + siteName
 	body(class=currentPage, itemscope itemtype="http://schema.org/WebPage")
 		//here start the Main Header
@@ -20,7 +23,7 @@ html(lang='en' prefix='og: http://ogp.me/ns#', class='no-js')
 		//here ends the Main Container
 		//here start the Main Footer
 		footer(class='main-footer')
-			include ../includes/footer
+			include ../components/footer
 			block main-footer
 		//here ends the Main Footer
 		script(src="assets/js/scripts-min.js")

@@ -26,7 +26,12 @@ body {
 	font-size  		: fontSize(small);
 	font-weight      : bold;
 }
-.main-container{}
+.main-container{
+	color      		: #FFF;
+	padding    		: 2rem 0;
+	font-size  		: fontSize(smaller);
+	margin-top 		: auto;
+}
 .main-footer {
 	background 		: $color-first;
 	color      		: #FFF;

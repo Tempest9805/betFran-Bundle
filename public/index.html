@@ -40,61 +40,100 @@
     <link rel="manifest" href="./manifest.json">
     <link rel="author" type="text/plain" href="./humans.txt">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="./sitemap.xml">
+    <script src="https://kit.fontawesome.com/20f3c29ee8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Home | kikeestrada</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap" rel="stylesheet">
+    <title>Home | BetFran</title>
   </head>
   <body class="home" itemscope itemtype="http://schema.org/WebPage">
     <!--here start the Main Header-->
     <header class="main-header">
       <nav class="top-nav">
-        <div class="top-nav__container"><a class="top-nav__link" href="./"><img class="top-nav__logo" src="assets/img/img1.jpg" alt=""></a>
-          <ul class="top-nav__menu">
-            <li class="top-nav__li"><a class="top-nav__anchor" href="./">Home</a></li>
-            <li class="top-nav__li"><a class="top-nav__anchor" href="page2.html">page 2</a></li>
-          </ul>
-          <button class="top-nav__mb-iconMenu hamburger hamburger--slider-r" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+        <div class="top-nav__container">
+          <div class="top-nav__align">
+            <button class="top-nav__mb-iconMenu hamburger hamburger--slider-r" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button><a class="top-nav__link" href="./"><img class="top-nav__logo" src="https://betfran.com/assets/images/betfran/sb-logo.png" alt=""></a>
+          </div>
+          <div>
+            <ul class="top-nav__menu">
+              <li class="top-nav__li"><a class="top-nav__anchor" href="page2.html">DEPORTES</a></li>
+              <li class="top-nav__li"><a class="top-nav__anchor" href="page2.html">CASINO</a></li>
+              <li class="top-nav__li"><a class="top-nav__anchor" href="page2.html">CABALLOS</a></li>
+              <li class="top-nav__li"><a class="top-nav__anchor" href="page2.html">ESPORTS</a></li>
+              <li class="top-nav__li"><a class="top-nav__anchor" href="page2.html">CASINO EN VIVO</a></li>
+              <li class="top-nav__li"><a class="top-nav__anchor" href="page2.html">APUESTAS EN VIVO</a></li>
+              <li class="top-nav__li"><a class="top-nav__anchor" href="page2.html">PROMOCIONES</a></li>
+              <li class="top-nav__li"><a class="top-nav__anchor" href="page2.html">BANCA</a></li>
+              <li class="top-nav__li"><a class="top-nav__anchor" href="page2.html" target="_blank">POKER</a></li>
+              <li class="top-nav__li"><a class="top-nav__anchor" href="http://clsop.com/" target="_blank">CLSOP</a></li>
+            </ul>
+          </div>
+          <div class="top-nav__align">	
+            <button class="btn btn__login">INGRESAR</button>
+            <button class="btn btn__register">REGISTRATE</button>
+          </div>
         </div>
       </nav>
+      <div class="container ed-container ed-grid  s-grid-1 lg-grid-4 rows-gap cols-gap">
+        <div class="container__slider lg-cols-3">
+          <div class="tns-single" id="tnsSingle">
+            <div>
+              <div class="tns-single__content"><img class="img-fluid altura" src="https://betfran.com/assets/images/betfran/Sliders/banner-Road.jpg" alt=""></div>
+            </div>
+            <div>
+              <div class="tns-single__content"><img class="img-fluid altura" src="https://betfran.com/assets/images/betfran/Sliders/banner-clsop-league-1920x450.jpg" alt=""></div>
+            </div>
+            <div>
+              <div class="tns-single__content"><img class="img-fluid altura" src="https://betfran.com/assets/images/betfran/Sliders/slider000.jpg" alt=""></div>
+            </div>
+          </div>
+        </div>
+        <div class="container__signup s-y-2 s-x-1 lg-y-1 lg-x-4">
+          <div class="login">
+            <div class="login__align">
+              <label>Usuario: </label>
+              <input class="login__input-label" type="text">
+            </div>
+            <div class="login__align"> 
+              <label>Contraseña: </label>
+              <input class="login__input-label" type="text">
+            </div>
+            <div class="login__btn"> 
+              <button class="btn btn__login">INGRESAR</button>
+              <button class="btn btn__register">REGISTRATE</button>
+            </div>
+            <div class="login__forgot"> <a href="">¿Olvidó su contraseña?</a></div>
+          </div>
+        </div>
+      </div>
     </header>
     <!--here ends the Main Header-->
     <!--here start the Main Container-->
     <main class="main-container">
-      <div class="ed-container">
-        <div class="ed-item"><h1>Este titulo es de un Archivo de Markdown externo</h1>
-<p>Este parrafo 1 es de un markdown</p>
-<p>Este parrafo 2 es de un markdown</p>
-
+      <div class="container-middle ed-container ed-grid s-grid-4">
+        <div class="container-middle__videos s-cols-3">
+          <h2>hola </h2>
+        </div>
+        <div class="container-middle__servicios">
+          <h2>hola </h2>
         </div>
       </div>
     </main>
     <!--here ends the Main Container-->
     <!--here start the Main Footer-->
     <footer class="main-footer">
-      <div class="ed-container">
-        <div class="ed-item">
-          <h2>Contact</h2>
+      <div class="footer">
+        <div class="footer__subFooter ed-grid m-grid-2  lg-grid-3 row-gap">
+          <div class="footer__cols"><a class="foot-icon" href="https://www.google.com/" target="_blank">Deportes</a><a class="foot-icon" href="https://www.google.com/" target="_blank">Caballos</a><a class="foot-icon" href="https://www.google.com/" target="_blank">Registrate</a><a class="foot-icon" href="https://www.google.com/" target="_blank">Recargas y pagos</a></div>
+          <div class="footer__cols"> <a class="foot-icon" href="https://www.google.com/" target="_blank">Acerca de nosotros</a><a class="foot-icon" href="https://www.google.com/" target="_blank">Términos y condiciones</a><a class="foot-icon" href="https://www.google.com/" target="_blank">Juego responsable</a><a class="foot-icon" href="https://www.google.com/" target="_blank">Politica de privacidad</a></div>
+          <div class="footer__cols"><a class="foot-icon" href="https://www.google.com/" target="_blank">Reglas de la casa</a><a class="foot-icon" href="https://www.google.com/" target="_blank">Reglas de deportes</a><a class="foot-icon" href="https://www.google.com/" target="_blank">Reglas de poker</a></div>
         </div>
-      </div>
-      <div class="ed-grid m-grid-2 lg-grid-4 row-gap">
-        <ul class="data-list">
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 1</a></i></li>
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 2</a></i></li>
-        </ul>
-        <ul class="data-list">
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 3</a></i></li>
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 4</a></i></li>
-        </ul>
-        <ul class="data-list">
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 5</a></i></li>
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 6</a></i></li>
-        </ul>
-        <ul class="data-list">
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 7</a></i></li>
-          <li><i class="far fa-envelope"><a class="foot-icon" href="https://www.google.com/" target="_blank">Link 8</a></i></li>
-        </ul>
       </div>
     </footer>
     <!--here ends the Main Footer-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="assets/js/scripts-min.js"></script>
   </body>
 </html>

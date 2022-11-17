@@ -1,72 +1,89 @@
 .top-nav{
-	border-bottom 	: 1px solid #DFE0E0;
-	background    	: #FFF;
+	
+	background    	: var(--color-first);
 	position      	: fixed;
 	top           	: 0;
 	width         	: 100%;
 	left          	: 0;
 	display 		: flex;
 	justify-content : center;
-	z-index: 1;
+	z-index			: 1;
+	color			: white;
 
 	&__container{
 		display 		: flex;
+		align-items: center;
 		justify-content : space-between;
 		height        	: var(--header-height);
 		width: 100%;
-		max-width: 1200px;
+		max-width: 1600px;
 		padding: 0 15px;
+	}
+	&__align{
+		display: flex;
+		flex-wrap: nowrap;
+		padding-right: 1rem;
 	}
 
 	&__link{
 		align-self: center;
 	}
 	&__logo{
+		padding-left: 1rem;
 		height: 1.1rem;
 		width: auto;
 		display: block;
-		@include from(l){
+		min-width: 101px;
+		min-height: 82.72px;
+		@include from(lg){
 			height: 1.4rem;
 		}
 	}
 	&__menu{
-		@include fromTo(s,l){
+		@include fromTo(s,lg){
 			position 		: fixed;
 			padding 		: 0 10px;
 			height 			: 100vh;
 			width 			: 260px;
-			background 		: white;
+			background 		: var(--color-first);
 			transition 		: right .5s;
 			overflow-y 		: auto;
-			border-top 		: 1px solid #DFE0E0;
-			border-left 	: 1px solid #DFE0E0;
 			top 			: var(--header-height);
 			right 			: -260px;
 			&.show-top-nav {
-				right 		: 0;
+				left 		: 0;
 			}
 		}
-		@include from(l){
+		@include from(lg){
 			align-self: center;
 			margin: 0;
 			padding: 0;
 		}
 	}
 	&__li{
-		@include fromTo(s,l){
+		@include fromTo(s,lg){
 			display: block;
-			border-bottom: 1px solid #DFE0E0;
+			// border-bottom: 1px solid #DFE0E0;
 			padding: 10px 0;
 			margin: 0;
-
+			
 		}
 		margin-left: 1em;
 		list-style-type: none;
 		display: inline-block;
+
+	}
+	&__anchor:hover{
+		text-decoration: none;
+		color: #ff9c00 ;
 	}
 	&__anchor{
-		@include fromTo(s,l){
+		@include fromTo(s,lg){
 			display: block;
+		}
+		@include from(lg){
+			border-right: 1px solid white;
+			padding-right: .5rem;
 		}
 
 	}
@@ -78,11 +95,11 @@
 		padding: 0;
 		span{
 			&.hamburger-inner{
-				background: black;
+				background: rgb(255, 255, 255);
 				&::after{}
 				&::before{}
 				&::after, &::before{
-					background: black;
+					background: rgb(255, 255, 255);
 				}
 			}
 		}
@@ -93,7 +110,7 @@
 			outline: 5px auto -webkit-focus-ring-color;
 			outline-offset: -2px;
 		}
-		@include from(l){
+		@include from(lg){
 			display: none;
 		}
 	}

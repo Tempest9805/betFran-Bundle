@@ -3,65 +3,30 @@
 
 var _topNav = require('./modules/topNav');
 
-var _searchFilter = require('./modules/searchFilter');
+var _tnsSlider = require('./modules/tns-slider');
 
-var _swDetecter = require('./modules/swDetecter');
+(0, _topNav.topNav)();
+(0, _tnsSlider.tnsSingle)();
 
-(function () {
-	(0, _swDetecter.swDetecter)();
-	(0, _topNav.topNav)();
-	if (document.body.classList.contains('home')) {
-		// functions here
-	} else if (document.body.classList.contains('portfolio')) {
-		// functions here
-		(0, _searchFilter.searchFilter)();
-	}
-})();
-
-},{"./modules/searchFilter":2,"./modules/swDetecter":3,"./modules/topNav":4}],2:[function(require,module,exports){
+},{"./modules/tns-slider":2,"./modules/topNav":3}],2:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
-var searchFilter = exports.searchFilter = function searchFilter() {
-	// get the input data
-	var fnFilter = function fnFilter(inputElement, selector, selectorContainer) {
-		inputElement.addEventListener('keyup', function (e) {
-			if (e.key === 'Escape') e.target.value = '';
-			fnCompareElements(e.target.value.toUpperCase(), selector, selectorContainer);
-		});
-	};
-	var fnCompareElements = function fnCompareElements(filterText, selector, selectorContainer) {
-		var searchElements = document.querySelectorAll(selector);
-		var searchContainers = document.querySelectorAll(selectorContainer);
-		searchElements.forEach(function (el) {
-			el.textContent.toUpperCase().includes(filterText) ? el.style.display = 'block' : el.style.display = 'none';
-		});
-		searchContainers.forEach(function (el) {
-			el.textContent.toUpperCase().includes(filterText) ? el.style.display = 'block' : el.style.display = 'none';
-		});
-	};
-	fnFilter(document.getElementById('searchInput'), '.class-item__fragment', '.class-item');
+var tnsSingle = exports.tnsSingle = function tnsSingle() {
+	var slider = tns({
+		container: '#tnsSingle',
+		items: 1,
+		slideBy: 1,
+		speed: 1000,
+		mode: 'gallery',
+		mouseDrag: true,
+		controlsText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>']
+	});
 };
 
 },{}],3:[function(require,module,exports){
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
-var swDetecter = exports.swDetecter = function swDetecter() {
-	if ('serviceWorker' in navigator) {
-		navigator.serviceWorker.register('./sw.js').then(function (reg) {
-			return console.log('Registro de SW exitoso', reg);
-		}).catch(function (err) {
-			return console.warn('Error al tratar de registrar el sw', err);
-		});
-	}
-};
-
-},{}],4:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
